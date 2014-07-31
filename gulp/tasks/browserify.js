@@ -33,6 +33,11 @@ gulp.task('browserify', function () {
             destination: './client/public/javascript/'
         },
         {
+            input: ['./client/javascript/solapp.js'],
+            output: 'solapp.js',
+            destination: './client/public/javascript/'
+        },
+        {
             input: ['./client/javascript/landing.js'],
             output: 'landing.js',
             destination: './client/public/javascript/'

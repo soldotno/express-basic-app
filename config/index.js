@@ -88,4 +88,4 @@ var config = module.exports = convict({
 debug(util.inspect(process.env, { colors: true }));
 
 // perform the config validation
-config.validate();
+//config.validate();
