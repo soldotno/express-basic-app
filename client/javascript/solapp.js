@@ -12,9 +12,9 @@ var ReactAsync = require('react-async');
 var superagent = require('superagent');
 
 var Head = require('./modules/components/head-component');
-var Articles = require('./articles-component');
-var Menu = require('./menu-component');
-var Footer = require('./footer-component');
+var Articles = require('./modules/components/articles-component');
+var Menu = require('./modules/components/menu-component');
+var Footer = require('./modules/components/footer-component');
 
 module.exports = React.createClass({
     displayName: 'SolApp',
