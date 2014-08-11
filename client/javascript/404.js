@@ -14,7 +14,7 @@ var ReactAsync = require('react-async');
 var Head = require('./modules/components/head');
 
 // Main page component (this is asyncronous)
-var Landing = React.createClass({
+var NotFound = React.createClass({
     mixins: [ReactAsync.Mixin],
 
     getInitialStateAsync: function (callback) {
@@ -25,14 +25,14 @@ var Landing = React.createClass({
         return (
             <html>
                 <Head title={this.state.title} description={this.state.description}></Head>
-                <body id="landing">
+                <body id="notfound">
                     <div className="container">
                         <div className="jumbotron text-center">
                             <h1><span className="fa fa-cloud"></span> {this.state.title}</h1>
 
-                            <p>Welcome!</p>
+                            <p>You requested: {this.state.url}</p>
 
-                            <a href="/reactapp" className="btn btn-success"><span className="fa fa-user"></span> Enter</a>
+                            <a href="/reactapp" className="btn btn-success"><span className="fa fa-user"></span> Go back home</a>
                         </div>
                     </div>
                 </body>
@@ -41,7 +41,7 @@ var Landing = React.createClass({
     }
 });
 
-module.exports = Landing;
+module.exports = NotFound;
 
 // If the file is processed by the browser, it should mount itself to the document and 'overtake' the markup from the server without rerendering
 if (typeof window !== 'undefined') {
@@ -51,6 +51,6 @@ if (typeof window !== 'undefined') {
     }
 
     window.onload = function () {
-        React.renderComponent(Landing(), document);
+        React.renderComponent(NotFound(), document);
     }
 }
