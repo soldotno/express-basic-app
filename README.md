@@ -1,6 +1,8 @@
 Express Basic Application
 =========================
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/soldotno/express-basic-app.svg)](https://greenkeeper.io/)
+
 #### Introduction:
 This project will give you a scaffolding/boilerplate of the [node](http://www.nodejs.org/)/[express](http://www.expressjs.com/) stack. It uses [mongodb](http://www.mongodb.org/) for database models and [redis](http://www.redis.io/) for session storage. Fork at will! :)
 
